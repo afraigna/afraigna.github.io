@@ -26,7 +26,7 @@ async function fetchRepos() {
   const repos = await apiFetch(
     `${API_BASE}/users/${GITHUB_USER}/repos?sort=updated&per_page=100&type=public`
   );
-  return repos.filter(r => r.name !== `${GITHUB_USER}.github.io` && !r.private);
+  return repos.filter(r => r.name !== `${GITHUB_USER}.github.io` && !r.private && !r.fork);
 }
 
 function timeAgo(dateStr) {
