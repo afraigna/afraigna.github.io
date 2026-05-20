@@ -88,9 +88,9 @@ function buildCard(repo) {
   const forkBadge = repo.fork ? '<span class="card-fork-badge">fork</span>' : '';
 
   const demoBtn = repo.homepage
-    ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Voir la démo de ${repo.name}">
+    ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Accéder à l'application ${repo.name}">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        Démo
+        Accéder
       </a>`
     : '';
 
